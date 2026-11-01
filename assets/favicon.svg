@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" aria-label="VAER Systems Tri-Pillar Mark">
+  <defs>
+    <linearGradient id="symGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#558ed5"/>
+    </linearGradient>
+    <linearGradient id="symGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#558ed5"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="fieldLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#558ed5" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#558ed5" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background subtle coordinate grid ring -->
+  <circle cx="100" cy="100" r="88" fill="none" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.6"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#334155" stroke-width="1" opacity="0.4"/>
+
+  <!-- Concentric field contours / wave propagation arcs -->
+  <path d="M 65 140 A 50 50 0 0 1 135 140" fill="none" stroke="url(#fieldLineGrad)" stroke-width="1.5" stroke-dasharray="2 4" opacity="0.5"/>
+  <path d="M 50 155 A 72 72 0 0 1 150 155" fill="none" stroke="url(#fieldLineGrad)" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Three Connected Branches (Pillars):
+       Node 1 (Top): Computational Physics (100, 34)
+       Node 2 (Bottom Left): Advanced Sensing (44, 146)
+       Node 3 (Bottom Right): Predictive Systems (156, 146)
+  -->
+  <!-- Interconnected field curves / streamlines -->
+  <path d="M 100 34 C 82 72, 54 110, 44 146" fill="none" stroke="url(#symGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 44 146 C 76 132, 124 132, 156 146" fill="none" stroke="url(#symGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 156 146 C 146 110, 118 72, 100 34" fill="none" stroke="url(#symGrad2)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Internal field lattice / vector propagation lines -->
+  <path d="M 100 34 L 100 114" fill="none" stroke="#558ed5" stroke-width="1.8" stroke-dasharray="4 3" opacity="0.7"/>
+  <path d="M 44 146 L 100 114" fill="none" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4 3" opacity="0.7"/>
+  <path d="M 156 146 L 100 114" fill="none" stroke="#818cf8" stroke-width="1.8" stroke-dasharray="4 3" opacity="0.7"/>
+
+  <!-- Central convergence nucleus (Synthesis / Decisions) -->
+  <circle cx="100" cy="114" r="4.5" fill="#ffffff" opacity="0.95"/>
+  <circle cx="100" cy="114" r="9" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Node 1: Top (Computational Physics) -->
+  <circle cx="100" cy="34" r="6.5" fill="#38bdf8"/>
+  <circle cx="100" cy="34" r="11" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Node 2: Bottom-Left (Advanced Sensing) -->
+  <circle cx="44" cy="146" r="6.5" fill="#558ed5"/>
+  <circle cx="44" cy="146" r="11" fill="none" stroke="#558ed5" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Node 3: Bottom-Right (Predictive Systems) -->
+  <circle cx="156" cy="146" r="6.5" fill="#818cf8"/>
+  <circle cx="156" cy="146" r="11" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.5"/>
+</svg>

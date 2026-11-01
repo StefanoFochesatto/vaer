@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="snowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#93c5fd" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="windGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky / Background -->
+  <rect width="800" height="480" fill="#080e1a" rx="12"/>
+
+  <!-- Mountain Peak Contours -->
+  <path d="M -20 420 L 160 260 L 320 320 L 520 180 L 680 280 L 820 220 L 820 480 L -20 480 Z" fill="url(#snowGrad)" stroke="#64748b" stroke-width="1.5"/>
+  <!-- Layered Facet Contours -->
+  <path d="M 160 260 L 240 380 L 380 480" stroke="#475569" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+  <path d="M 520 180 L 580 340 L 710 480" stroke="#475569" stroke-width="1.2" fill="none" stroke-dasharray="3 3"/>
+
+  <!-- Wind Vectors over Ridge -->
+  <g opacity="0.85">
+    <path d="M 280 130 C 360 110, 460 110, 530 140" fill="none" stroke="url(#windGrad)" stroke-width="2.5" stroke-dasharray="6 4"/>
+    <polygon points="532,141 520,135 524,147" fill="#38bdf8"/>
+    
+    <path d="M 260 160 C 350 140, 470 140, 540 170" fill="none" stroke="url(#windGrad)" stroke-width="2" stroke-dasharray="5 3"/>
+    <polygon points="542,171 530,165 534,177" fill="#38bdf8"/>
+
+    <text x="380" y="100" fill="#38bdf8" font-family="monospace" font-size="11">SURFACE WIND FIELD ASSIMILATION u(x,y,t)</text>
+  </g>
+
+  <!-- Distributed Snowpack Probe 1 -->
+  <g transform="translate(220, 240)">
+    <line x1="0" y1="0" x2="0" y2="110" stroke="#f59e0b" stroke-width="3"/>
+    <!-- Thermistors along probe -->
+    <circle cx="0" cy="15" r="4" fill="#ef4444"/>
+    <circle cx="0" cy="45" r="4" fill="#f59e0b"/>
+    <circle cx="0" cy="75" r="4" fill="#38bdf8"/>
+    <circle cx="0" cy="105" r="4" fill="#60a5fa"/>
+    <!-- Telemetry Head -->
+    <polygon points="-8,0 8,0 0,-14" fill="#f8fafc"/>
+    <!-- Wireless Wave -->
+    <path d="M 6 -18 A 12 12 0 0 1 18 -6" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M 10 -24 A 18 18 0 0 1 24 -10" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="-75" y="120" width="150" height="36" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1" opacity="0.9"/>
+    <text x="0" y="135" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="9">NODE 04 - NORTH RIDGE</text>
+    <text x="0" y="148" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="8.5">dT/dz: -0.82°C/10cm (FACETS)</text>
+  </g>
+
+  <!-- Distributed Snowpack Probe 2 (Lee Slope) -->
+  <g transform="translate(590, 250)">
+    <line x1="0" y1="0" x2="0" y2="120" stroke="#38bdf8" stroke-width="3"/>
+    <circle cx="0" cy="20" r="4" fill="#f87171"/>
+    <circle cx="0" cy="55" r="4" fill="#fbbf24"/>
+    <circle cx="0" cy="90" r="4" fill="#38bdf8"/>
+    <circle cx="0" cy="118" r="4" fill="#60a5fa"/>
+    <polygon points="-8,0 8,0 0,-14" fill="#f8fafc"/>
+    <path d="M 6 -18 A 12 12 0 0 1 18 -6" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect x="-70" y="130" width="140" height="36" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" opacity="0.9"/>
+    <text x="0" y="145" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="9">NODE 08 - LEE BOWL</text>
+    <text x="0" y="158" text-anchor="middle" fill="#34d399" font-family="monospace" font-size="8.5">WIND SLAB ACCUMULATION</text>
+  </g>
+
+  <!-- Risk Assessment Overlay HUD -->
+  <g transform="translate(30, 30)">
+    <rect width="260" height="80" rx="8" fill="#0f172a" stroke="#558ed5" stroke-width="1.2" opacity="0.9"/>
+    <text x="16" y="24" fill="#558ed5" font-family="system-ui, sans-serif" font-size="12" font-weight="700">PROGRAM: VAER CRYOSPHERE</text>
+    <text x="16" y="42" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10.5">Distributed Snowpack Thermal Sensing</text>
+    <text x="16" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Real-Time Mesoscale Wind Modeling</text>
+    <text x="16" y="72" fill="#f59e0b" font-family="monospace" font-size="9.5">SLAB INSTABILITY PROBABILITY: ELEVATED</text>
+  </g>
+</svg>

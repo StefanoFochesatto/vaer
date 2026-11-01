@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="droneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="propGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="#080e1a" rx="12"/>
+
+  <!-- Drone Central Airframe (at 400, 240) -->
+  <g transform="translate(400, 230)">
+    <!-- Rotor Wash Flow Lines (mitigation zone below) -->
+    <path d="M -160 30 C -150 90, -180 150, -200 200" stroke="#334155" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+    <path d="M -120 30 C -110 90, -130 150, -140 200" stroke="#334155" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+    <path d="M 160 30 C 150 90, 180 150, 200 200" stroke="#334155" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+    <path d="M 120 30 C 110 90, 130 150, 140 200" stroke="#334155" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+    <text x="0" y="180" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">ROTOR-WASH MITIGATION ENVELOPE</text>
+
+    <!-- Drone Arms -->
+    <line x1="-150" y1="10" x2="150" y2="10" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-100" y1="-20" x2="100" y2="40" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Propellers (spinning blur) -->
+    <ellipse cx="-150" cy="-5" rx="50" ry="7" fill="url(#propGrad)"/>
+    <ellipse cx="150" cy="-5" rx="50" ry="7" fill="url(#propGrad)"/>
+    <ellipse cx="-75" cy="-25" rx="45" ry="6" fill="url(#propGrad)"/>
+    <ellipse cx="75" cy="-25" rx="45" ry="6" fill="url(#propGrad)"/>
+
+    <!-- Drone Main Body -->
+    <rect x="-50" y="-10" width="100" height="35" rx="10" fill="url(#droneGrad)" stroke="#558ed5" stroke-width="2"/>
+    <circle cx="0" cy="8" r="7" fill="#558ed5"/>
+
+    <!-- Forward Extended Sampling Probe (Out of Rotor Wash!) -->
+    <line x1="0" y1="-10" x2="0" y2="-110" stroke="#38bdf8" stroke-width="3"/>
+    <!-- Aerodynamic Isokinetic Inlet Head -->
+    <polygon points="-12,-110 12,-110 6,-125 -6,-125" fill="#38bdf8"/>
+    <circle cx="0" cy="-125" r="3" fill="#ffffff"/>
+    
+    <!-- Incoming Clean Air Streamlines entering probe -->
+    <path d="M -30 -160 C -15 -145, -8 -135, 0 -125" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <path d="M 30 -160 C 15 -145, 8 -135, 0 -125" stroke="#38bdf8" stroke-width="1.8" fill="none"/>
+    <path d="M 0 -170 L 0 -125" stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-dasharray="3 3"/>
+    <text x="0" y="-138" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="9.5" font-weight="bold">ISOKINETIC INLET</text>
+
+    <!-- Sensor Pod Labels -->
+    <rect x="-190" y="-100" width="140" height="44" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" opacity="0.9"/>
+    <text x="-120" y="-84" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="9">THERMODYNAMICS</text>
+    <text x="-120" y="-68" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="8.5">P, T, RH Fast-Response</text>
+
+    <rect x="50" y="-100" width="140" height="44" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1" opacity="0.9"/>
+    <text x="120" y="-84" text-anchor="middle" fill="#f8fafc" font-family="monospace" font-size="9">AEROSOL SPECTRA</text>
+    <text x="120" y="-68" text-anchor="middle" fill="#38bdf8" font-family="monospace" font-size="8.5">PM1, PM2.5, PM10 OPC</text>
+  </g>
+
+  <!-- Left Program Card -->
+  <g transform="translate(30, 40)">
+    <rect width="240" height="75" rx="8" fill="#0f172a" stroke="#558ed5" stroke-width="1.2" opacity="0.95"/>
+    <text x="14" y="24" fill="#558ed5" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">VAER AEROSENSE</text>
+    <text x="14" y="42" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="10.5">Drone-Based Atmospheric Profiling</text>
+    <text x="14" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="9.5">Boundary Layer Thermodynamics &amp; Aerosols</text>
+  </g>
+
+  <!-- Right Telemetry Readout -->
+  <g transform="translate(540, 40)">
+    <rect width="230" height="120" rx="8" fill="#0f172a" stroke="#558ed5" stroke-width="1.2" opacity="0.95"/>
+    <text x="16" y="24" fill="#558ed5" font-family="monospace" font-size="10" font-weight="bold">PROFILING TELEMETRY (LIVE)</text>
+    <text x="16" y="44" fill="#cbd5e1" font-family="monospace" font-size="9.5">Alt: 420 m AGL | RoC: +2.1 m/s</text>
+    <text x="16" y="62" fill="#38bdf8" font-family="monospace" font-size="9.5">Press: 962.4 hPa | Temp: -8.3°C</text>
+    <text x="16" y="80" fill="#34d399" font-family="monospace" font-size="9.5">RH: 78.4% | PM2.5: 14.2 µg/m³</text>
+    <text x="16" y="98" fill="#f59e0b" font-family="monospace" font-size="9.5">GNSS RTK Fix: 3D Precision ±2cm</text>
+  </g>
+</svg>

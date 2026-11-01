@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | VAER Systems - Product Family Architecture</title>
+  <meta name="description" content="Product-family architecture at VAER Systems: VAER Cryosphere, VAER Atmosphere, VAER AeroSense, and VAER Compute.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-link" aria-label="VAER Systems Home">
+        <img src="assets/vaer_logo_horizontal.svg" alt="VAER Systems" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Overview</a></li>
+          <li><a href="technology.html" class="nav-link">Technology</a></li>
+          <li><a href="programs.html" class="nav-link">Programs</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle visual theme"></button>
+        <a href="contact.html" class="btn btn-outline btn-sm">Inquire</a>
+        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section bg-grid-pattern" style="padding: 4rem 0 3rem; border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <span class="section-kicker">Systems Architecture</span>
+        <h1 class="hero-title" style="font-size: 2.75rem; margin-bottom: 1rem;">Initial Product-Family Architecture</h1>
+        <p class="hero-lead" style="max-width: 820px; margin-bottom: 1rem;">
+          Modular product lines engineered to integrate field sensing, low-power mountain communications, and high-performance physics-based predictive algorithms.
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Family Breakdown Cards -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- Product 1: VAER Cryosphere -->
+        <div id="cryosphere" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 3rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <span class="program-tag" style="color: var(--color-primary-light);">Product Family 01 &bull; Hardware &amp; Decision Support</span>
+              <h2 style="font-size: 2rem; color: var(--text-main); margin-top: 0.25rem;">VAER Cryosphere&trade;</h2>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; background: rgba(85, 142, 213, 0.15); border: 1px solid var(--color-primary); color: var(--color-primary-light); padding: 0.4rem 0.85rem; border-radius: var(--radius-sm);">
+              TRL: Field Prototype Validated
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.65; max-width: 850px; margin-bottom: 2rem;">
+            Designed for avalanche forecasters, transportation corridors, and alpine mining operations. Integrates autonomous sub-surface snow thermal profiling arrays with mountain mesh communications and wind-loading modeling.
+          </p>
+
+          <div class="grid-3" style="gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Thermal Probe Array</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                2-meter vertical carbon-composite probe with 8 calibrated precision thermistors. Measures vertical temperature gradients (dT/dz) down to the ground interface to detect kinetic facet weak layers.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Mountain Mesh Gateway</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Solar-assisted lithium titanate power stage rated to -45°C. Sub-GHz LoRa mesh node with automated burst satellite failover (Iridium SBD) for zero line-of-sight dropouts.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Forecaster Interface</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Interactive web console displaying real-time snowpack stratigraphy, settlement creep rates, simulated wind slab deposition, and probabilistic instability indices.
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+            <div>OPERATING TEMP: -50°C to +40°C</div>
+            <div>INGESTION LATENCY: &lt; 30 sec</div>
+            <div>OUTPUT FORMATS: GeoJSON, NetCDF, Webhook</div>
+          </div>
+        </div>
+
+        <!-- Product 2: VAER Atmosphere -->
+        <div id="atmosphere" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 3rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <span class="program-tag" style="color: var(--color-cyan);">Product Family 02 &bull; Industrial Atmospheric Prognostics</span>
+              <h2 style="font-size: 2rem; color: var(--text-main); margin-top: 0.25rem;">VAER Atmosphere&trade;</h2>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; background: rgba(56, 189, 248, 0.15); border: 1px solid var(--color-cyan); color: var(--color-cyan); padding: 0.4rem 0.85rem; border-radius: var(--radius-sm);">
+              TRL: Operational Pilot
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.65; max-width: 850px; margin-bottom: 2rem;">
+            Purpose-built for open-pit mining superintendents and environmental safety managers operating in Alaska, Northern Canada, and Scandinavia. Prognoses temperature inversion events and cold-air particulate trapping.
+          </p>
+
+          <div class="grid-3" style="gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Prognostic Inversion Engine</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Ingests local barometric tendencies, radiative cooling fluxes, and synoptic upper-air patterns to compute inversion onset time, cap boundary height, and expected duration in hours.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Pit Microclimate Profiler</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Bench-mounted thermodynamic sensor stations along the pit perimeter, tracking thermal decoupling, katabatic drainage streams, and stagnant exhaust pooling.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Mine Dispatch API</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Direct REST/MQTT connector for Wenco, Modular, and CAT MineStar dispatch systems to dynamically pace haul fleet shifts before air quality breaches mandatory stop thresholds.
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+            <div>FORECAST HORIZON: 12h to 72h Ahead</div>
+            <div>UNCERTAINTY ENVELOPE: Calibrated Gaussian CI (90%)</div>
+            <div>DISPATCH PROTOCOLS: REST, OPC-UA, MQTT</div>
+          </div>
+        </div>
+
+        <!-- Product 3: VAER AeroSense -->
+        <div id="aerosense" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 3rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <span class="program-tag" style="color: var(--color-amber);">Product Family 03 &bull; Airborne Sounding Systems</span>
+              <h2 style="font-size: 2rem; color: var(--text-main); margin-top: 0.25rem;">VAER AeroSense&trade;</h2>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; background: rgba(245, 158, 11, 0.15); border: 1px solid var(--color-amber); color: var(--color-amber); padding: 0.4rem 0.85rem; border-radius: var(--radius-sm);">
+              TRL: Flight Tested
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.65; max-width: 850px; margin-bottom: 2rem;">
+            Turnkey airborne payload designed for multi-rotor UAV atmospheric soundings. Measures vertical profiles of pressure, temperature, relative humidity, and aerosol size spectra from 0 to 1,500m AGL.
+          </p>
+
+          <div class="grid-3" style="gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Isokinetic Aerodynamic Inlet</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                CFD-optimized sampling boom mounted above and ahead of the rotor disc. Eliminates propeller vortex shearing and particle fractionation during vertical climb.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Aerosol Spectrometer (OPC)</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Multi-channel optical particle counter recording PM1, PM2.5, and PM10 mass concentrations alongside 16 discrete size distribution channels (0.35µm to 12.4µm).
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Fast-Response Thermistors</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Miniature glass-bead thermistors with a thermal time constant of less than 80ms, enabling fine-scale boundary-layer inversion inflection detection during rapid 3m/s climbs.
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+            <div>PAYLOAD MASS: 480 g (All Sensors + Battery)</div>
+            <div>SAMPLING RATE: 10 Hz Georeferenced</div>
+            <div>COMPATIBILITY: DJI Matrice 300/350, Freefly, Custom UAVs</div>
+          </div>
+        </div>
+
+        <!-- Product 4: VAER Compute -->
+        <div id="compute" style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 3rem;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <span class="program-tag" style="color: var(--color-indigo);">Product Family 04 &bull; Numerical Physics &amp; Assimilation</span>
+              <h2 style="font-size: 2rem; color: var(--text-main); margin-top: 0.25rem;">VAER Compute&trade;</h2>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; background: rgba(129, 140, 248, 0.15); border: 1px solid var(--color-indigo); color: var(--color-indigo); padding: 0.4rem 0.85rem; border-radius: var(--radius-sm);">
+              TRL: Production Engine
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.65; max-width: 850px; margin-bottom: 2rem;">
+            The computational engine driving the entire VAER ecosystem. Runs high-resolution terrain-conforming Navier-Stokes wind solvers, variational data assimilation (4D-Var), and probabilistic risk algorithms.
+          </p>
+
+          <div class="grid-3" style="gap: 1.5rem; margin-bottom: 2rem;">
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Terrain Wind CFD</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Solves steady and unsteady incompressible wind fields over steep DEM topography at down to 10-meter spatial resolution, simulating boundary layer separation and lee-side eddies.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Variational Assimilation (4D-Var)</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Blends sparse ground sensor observations and drone soundings into continuous 3D thermodynamic state vectors using physics-constrained gradient optimization.
+              </p>
+            </div>
+            <div style="background: #080e1a; padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <h4 style="font-size: 1.05rem; color: var(--text-main); margin-bottom: 0.75rem;">Cloud / Edge Deployability</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                Containerized for high-throughput cloud cluster execution or local ruggedized on-site edge servers operating disconnected at remote mine sites.
+              </p>
+            </div>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+            <div>ARCHITECTURE: C++20 / CUDA / Python Scientific Stack</div>
+            <div>DEPLOYMENT: Docker / Kubernetes / Local Edge Appliance</div>
+            <div>API INTERFACE: gRPC, GraphQL, REST, Protobuf</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="assets/vaer_logo_horizontal.svg" alt="VAER Systems" style="height: 34px; margin-bottom: 1rem;">
+          <p class="footer-brand-desc">
+            Measure. Understand. Predict.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Product Families</h4>
+          <ul class="footer-links">
+            <li><a href="#cryosphere">VAER Cryosphere</a></li>
+            <li><a href="#atmosphere">VAER Atmosphere</a></li>
+            <li><a href="#aerosense">VAER AeroSense</a></li>
+            <li><a href="#compute">VAER Compute</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Technology</h4>
+          <ul class="footer-links">
+            <li><a href="technology.html">3 Technology Pillars</a></li>
+            <li><a href="programs.html">Applied Programs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About VAER</a></li>
+            <li><a href="contact.html">Inquiries</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal-notice">
+          &copy; 2026 VAER Systems. All product family names are provisional working brand concepts.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
