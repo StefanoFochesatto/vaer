@@ -49,8 +49,8 @@ button, summary, a { -webkit-tap-highlight-color: transparent; }
 .hero-container { display: grid; gap: 4rem; }
 .hero-content { max-width: 66rem; }
 /* Decorative contours: a static baseline, with optional pointer deformation. */
-.home .hero { position: relative; isolation: isolate; overflow: hidden; }
-.home .hero-container { position: relative; z-index: 1; }
+.hero { position: relative; isolation: isolate; overflow: hidden; }
+.hero-container { position: relative; z-index: 1; }
 .field-background { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
 .field-canvas { display: block; width: 100%; height: 100%; pointer-events: none; }
 @media (max-width: 700px) {
