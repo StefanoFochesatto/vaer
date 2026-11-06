@@ -136,10 +136,11 @@ li::marker { color: var(--muted); }
 /* Team Profiles */
 .team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem; margin-top: 2.5rem; }
 .team-card { border: 1px solid var(--line); background: var(--surface); display: flex; flex-direction: column; }
-.team-card-horizontal { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1.6fr; }
+.team-card-horizontal { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(280px, 1fr) 1.6fr; }
 .team-media { aspect-ratio: 4 / 3; width: 100%; border-bottom: 1px solid var(--line); background: #080f1e; position: relative; overflow: hidden; }
-.team-card-horizontal .team-media { aspect-ratio: auto; height: 100%; min-height: 320px; border-bottom: 0; border-right: 1px solid var(--line); }
+.team-card-horizontal .team-media { aspect-ratio: auto; height: 100%; min-height: 280px; border-bottom: 0; border-right: 1px solid var(--line); position: relative; }
 .team-photo { width: 100%; height: 100%; object-fit: cover; object-position: center center; display: block; }
+.team-card-horizontal .team-photo { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 .team-photo-luca { object-position: center 20%; }
 .photo-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75rem; color: var(--muted); background: linear-gradient(135deg, rgba(85, 142, 213, 0.04) 0%, transparent 100%), radial-gradient(circle at 50% 50%, rgba(41, 53, 73, 0.4) 1px, transparent 1px); background-size: 100% 100%, 18px 18px; }
 .placeholder-icon { color: var(--accent); opacity: .75; }
@@ -182,6 +183,7 @@ li::marker { color: var(--muted); }
   .team-grid { grid-template-columns: 1fr; }
   .team-card-horizontal { grid-column: auto; display: flex; flex-direction: column; }
   .team-card-horizontal .team-media { aspect-ratio: 4 / 3; height: auto; min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .team-card-horizontal .team-photo { position: static; }
   .team-card-horizontal .team-content { padding: 2rem; justify-content: flex-start; }
   .footer-grid { grid-template-columns: 1.4fr 1fr; }
   .footer-col-brand { grid-column: 1 / -1; }
